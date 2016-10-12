@@ -198,8 +198,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DEPARTAMENTOSController.cs" />
+    <Compile Include="Controllers\EMPLEADOSController.cs" />
+    <Compile Include="Controllers\EMPRESASController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PUESTOSController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -334,6 +338,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\EMPLEADOS\Create.cshtml" />
+    <Content Include="Views\EMPLEADOS\Delete.cshtml" />
+    <Content Include="Views\EMPLEADOS\Details.cshtml" />
+    <Content Include="Views\EMPLEADOS\Edit.cshtml" />
+    <Content Include="Views\EMPLEADOS\Index.cshtml" />
+    <Content Include="Views\EMPRESAS\Create.cshtml" />
+    <Content Include="Views\EMPRESAS\Delete.cshtml" />
+    <Content Include="Views\EMPRESAS\Details.cshtml" />
+    <Content Include="Views\EMPRESAS\Edit.cshtml" />
+    <Content Include="Views\EMPRESAS\Index.cshtml" />
+    <Content Include="Views\DEPARTAMENTOS\Create.cshtml" />
+    <Content Include="Views\DEPARTAMENTOS\Delete.cshtml" />
+    <Content Include="Views\DEPARTAMENTOS\Details.cshtml" />
+    <Content Include="Views\DEPARTAMENTOS\Edit.cshtml" />
+    <Content Include="Views\DEPARTAMENTOS\Index.cshtml" />
+    <Content Include="Views\PUESTOS\Create.cshtml" />
+    <Content Include="Views\PUESTOS\Delete.cshtml" />
+    <Content Include="Views\PUESTOS\Details.cshtml" />
+    <Content Include="Views\PUESTOS\Edit.cshtml" />
+    <Content Include="Views\PUESTOS\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
