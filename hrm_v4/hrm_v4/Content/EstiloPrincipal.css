@@ -76,7 +76,7 @@ h2{
     top: 4%; 
     left: 75%;
     font: 150% sans-serif;
-    width: 30%;
+    width: 25%;
 }
 a:link  
 {   
@@ -104,7 +104,7 @@ a{
 }  
 section{
     overflow-x:auto;
-    width: 77%;
+    width: 75%;
     height: 83%;
     position: absolute;
     top: 15%; 
