@@ -264,10 +264,19 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\EstiloPrincipal.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\acciones.png" />
+    <Content Include="Imagenes\conexus.png" />
+    <Content Include="Imagenes\departamentos.png" />
+    <Content Include="Imagenes\empresas.png" />
+    <Content Include="Imagenes\flecha.png" />
+    <Content Include="Imagenes\home.png" />
+    <Content Include="Imagenes\personal.png" />
+    <Content Include="Imagenes\puestos.png" />
     <Content Include="Models\HRMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>HRMModel.edmx</DependentUpon>
