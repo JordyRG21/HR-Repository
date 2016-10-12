@@ -11,7 +11,9 @@ namespace hrm_v4.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+
     public partial class EMPRESAS
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -24,6 +26,7 @@ namespace hrm_v4.Models
         public string NOMBRE { get; set; }
         public string RAZON_SOCIAL { get; set; }
         public string CEDULA_JURIDICA { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Por favor digite una fecha valida"), DisplayName("Fecha de Fundacion"), DataType(DataType.DateTime)]
         public System.DateTime FECHA_FUNDACION { get; set; }
         public string PAIS_ORIGEN { get; set; }
         public string SEDE_CENTRAL { get; set; }

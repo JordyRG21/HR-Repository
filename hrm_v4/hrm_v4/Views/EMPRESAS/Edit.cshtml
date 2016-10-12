@@ -3,16 +3,16 @@
 @{
     ViewBag.Title = "Edit";
 }
-
-<h2>Edit</h2>
+@Styles.Render("~/Content/EstiloFormulario.css")
+@Styles.Render("~/Content/EstiloBoton.css")
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
-        <h4>EMPRESAS</h4>
+        <h4>Empresas > Editar</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID_EMPRESA)
@@ -44,7 +44,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.FECHA_FUNDACION, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FECHA_FUNDACION, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.FECHA_FUNDACION, new { htmlAttributes = new { @class = "form-control",@type = "date" } })
                 @Html.ValidationMessageFor(model => model.FECHA_FUNDACION, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -75,15 +75,12 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Guardar" class="myButton" />
+                <input type="button" class="myButton" value="Regresar" onclick="location.href='@Url.Action("Index", "DEPARTAMENTOS")'" />
             </div>
         </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
